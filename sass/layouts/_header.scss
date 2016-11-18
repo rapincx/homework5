@@ -1,0 +1,86 @@
+header {
+  @include span(12);
+  border-bottom: 1px $tabs_border_color solid;
+  .auth-panel {
+    @include span(2 of 12 last);
+    @include push(10);
+    background-color: $elem_bg_color;
+    max-height: 24px;
+    padding: 7px 22px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: $link_color;
+      font: 400 11px Arial, sans-serif;
+      text-align: center;
+      text-decoration: none;
+      &:first-child::after {
+        content : '|';
+        width: 1px;
+        height: 10px;
+        margin-left: 18px;
+      }
+    }
+  }
+  .main-logo {
+    @include span(12);
+    margin-top: 17px;
+    .logo {
+      @include span(6 of 12);
+      position: relative;
+      .logo_desc {
+        position: absolute;
+        left: 170px;
+        top: 21px;
+        max-width: 120px;
+        color: $logo_desc_color;
+        font: 500 21px/19px "AFKlampenborg", sans-serif;
+      }
+    }
+    .header {
+      @include span(6 of 12 last);
+      h1 {
+        color: $header_color;
+        font: 400 15px/33px "Helios", sans-serif;
+        text-align : right;
+        margin-top: 21px;
+        margin-right: 29px;
+      }
+    }
+  }
+  .tabs {
+    @include span(7 of 12 last);
+    @include push(4);
+    ul {
+      font-size: 0;
+      margin-bottom: -1px;
+      li {
+        padding: 14px 40px;
+        display : inline-block;
+        color: $tabs_text_color;
+        font: 400 16px Arial, sans-serif;
+        border: 1px $tabs_border_color solid;
+        background: linear-gradient(to bottom, #e5eaeb, #d9d7d5);
+        &:first-child {
+          border-top-left-radius: 30px;
+        }
+        &:last-child {
+          border-top-right-radius: 30px;
+        }
+        a {
+          color : inherit;
+          text-decoration: none;
+        }
+        &.active {
+          background: linear-gradient(to bottom, #ffffff, #e8eced);
+          border-bottom: 1px #e8eced solid;
+          a {
+            color: $active_tabs;
+          }
+        }
+      }
+    }
+  }
+}

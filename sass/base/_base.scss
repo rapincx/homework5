@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Helios";
+  src: url("../fonts/HeliosRegular/HeliosRegular.eot");
+  src: url("../fonts/HeliosRegular/HeliosRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/HeliosRegular/HeliosRegular.woff") format("woff"),
+  url("../fonts/HeliosRegular/HeliosRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HeliosBlack";
+  src: url("../fonts/HeliosBlack/HeliosBlack.eot");
+  src: url("../fonts/HeliosBlack/HeliosBlack.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/HeliosBlack/HeliosBlack.woff") format("woff"),
+  url("../fonts/HeliosBlack/HeliosBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AFKlampenborg";
+  src: url("//db.onlinewebfonts.com/t/090baaab6de5b83cc72a25aee01e5346.eot");
+  src: url("//db.onlinewebfonts.com/t/090baaab6de5b83cc72a25aee01e5346.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/090baaab6de5b83cc72a25aee01e5346.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/090baaab6de5b83cc72a25aee01e5346.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/090baaab6de5b83cc72a25aee01e5346.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/090baaab6de5b83cc72a25aee01e5346.svg#AFKlampenborg") format("svg");
+}
+
+body {
+  background: linear-gradient(to bottom, #ced8d9, #fff);
+}
+$main_font_size: 11px;
+$link_color: #747474;
+$header_color: #646464;
+$logo_desc_color: #939598;
+$tabs_text_color: $logo_desc_color;
+$tabs_border_color: $logo_desc_color;
+$active_tabs: #45b8fb;
+$separator_color: #959595;
+$link_active_color: #02a4fa;
+$elem_bg_color: #ffffff;
