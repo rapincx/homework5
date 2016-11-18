@@ -1,0 +1,23 @@
+@import "../vendors/sass/susy";
+
+$susy: (
+        math: fluid,
+        output: float,
+        gutter-position: after,
+        container: 60em,
+        container-position: center,
+        columns: 12,
+        gutters: .25,
+        global-box-sizing: content-box,
+        last-flow: to,
+        debug: (
+                image: hide,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right,
+        ),
+);
+
+.wrapper {
+  @include container;
+}
