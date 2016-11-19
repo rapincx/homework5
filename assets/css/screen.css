@@ -1,0 +1,40 @@
+.company-sprite, .company-left_1, .company-left_2, .company-left_3, .company-left_4, .company-left_5 {
+    background-image: url('../img/company.png');
+    display: block;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+}
+
+.company-left_1 {
+    background-position: 0 0;
+    height: 69px;
+    width: 124px;
+}
+
+.company-left_2 {
+    background-position: 0 -69px;
+    height: 72px;
+    width: 116px;
+}
+
+.company-left_3 {
+    background-position: 0 -141px;
+    height: 48px;
+    width: 135px;
+}
+
+.company-left_4 {
+    background-position: 0 -189px;
+    height: 131px;
+    width: 137px;
+}
+
+.company-left_5 {
+    background-position: 0 -320px;
+    height: 57px;
+    width: 110px;
+}

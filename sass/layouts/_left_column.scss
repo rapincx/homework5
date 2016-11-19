@@ -1,0 +1,111 @@
+aside {
+  @include span(4 of 12);
+  .menu {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    h3 {
+      color: $menu_header_color;
+      font: 400 20px/33px Arial;
+      i {
+        color: inherit;
+        margin-left: 8px;
+      }
+    }
+    ul {
+      margin-top: 33px;
+      li {
+        line-height: 22px;
+        border-bottom: 1px $menu_border_color solid;
+        color: $menu_li_color;
+        font: 400 14px/33px Arial;
+        transition: border-bottom 1s, padding-left 0.5s;
+        a {
+          color: inherit;
+          text-decoration : none;
+        }
+        i {
+          color: inherit;
+          margin-right: 10px;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+        &:hover {
+          border-bottom: 1px $menu_header_color solid;
+          padding-left: 15px;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  .rss {
+    text-align: center;
+    border-top: 1px $rss_border solid;
+    border-bottom: 1px $rss_border solid;
+    .rss-btn {
+      display: inline-block;
+      padding: 8px 24px;
+      margin: 15px auto;
+      color: $rss_color;
+      font: 500 21px/19px "AFKlampenborg";
+      text-decoration: none;
+      border: 3px $rss_button_border solid;
+      border-radius: 30px;
+      transition: color 1s, background-color 1s;
+      i {
+        color: $rss_button_border;
+        margin-right: 10px;
+      }
+      &:hover {
+        color: white;
+        background-color: $rss_button_border;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+  .partners {
+    margin-top: 30px;
+    .company-sprite, .company-left_1, .company-left_2, .company-left_3, .company-left_4, .company-left_5 {
+      background-image: url('../img/company.png');
+      display: block;
+      background-repeat: no-repeat;
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      filter: grayscale(1);
+      transition: filter 0.5s;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+    .company-left_1 {
+      background-position: 0 0;
+      height: 69px;
+      width: 124px;
+    }
+    .company-left_2 {
+      background-position: 0 -69px;
+      height: 72px;
+      width: 116px;
+    }
+    .company-left_3 {
+      background-position: 0 -141px;
+      height: 48px;
+      width: 135px;
+    }
+    .company-left_4 {
+      background-position: 0 -189px;
+      height: 131px;
+      width: 137px;
+    }
+    .company-left_5 {
+      background-position: 0 -320px;
+      height: 57px;
+      width: 110px;
+    }
+  }
+}
