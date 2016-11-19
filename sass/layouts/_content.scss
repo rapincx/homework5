@@ -1,0 +1,115 @@
+main {
+  margin-top: 64px;
+  h2 {
+    color: #010101;
+    font: 400 26px/33px Arial;
+    margin-bottom: 26px;
+  }
+  @include span(8 of 12 last);
+  .item {
+    border-top: 1px $item_border_color solid;
+    border-bottom: 1px $item_border_color solid;
+    @include span(12);
+    .img-container {
+      @include span(2.5 of 12);
+      img {
+        margin-left: 11px;
+        margin-top: 17px;
+      }
+    }
+    .data-container {
+      @include span(9.5 of 12 last);
+      h3 {
+        color: $item_header_color;
+        font: 400 22px Arial;
+        margin: 15px 0 7px 0;
+      }
+      dl {
+        background-color: #dfe5e6;
+        width: 100%;
+        margin-bottom: 18px;
+        font-size : 0;
+        .no-border {
+          .no-border {
+            dt, dd {
+              border-bottom : none;
+            }
+            &:nth-child(odd) {
+              background-color: #dfe5e6;
+            }
+            &:nth-child(even) {
+              background-color: #eceff0;
+            }
+          }
+        }
+        dt {
+          display: inline-block;
+          width: 48%;
+          padding: 7px 0 6px 8px;
+          color: #505050;
+          font: 400 12px Arial;
+          border-bottom: 3px #ffffff solid;
+          &.no-border {
+            border-bottom : none;
+          }
+        }
+        dd {
+          display: inline-block;
+          margin: 0;
+          width: 48.8%;
+          padding: 7px 0 6px 8px;
+          color: #000000;
+          font: 400 12px Arial;
+          border-bottom: 3px #ffffff solid;
+          a {
+            color: inherit;
+            text-decoration : none;
+          }
+          i {
+            color: #6c6c6c;
+            margin-right: 6px;
+          }
+          &.no-border {
+            border-bottom : none;
+          }
+        }
+      }
+      table {
+        background-color: #dfe5e6;
+        width: 100%;
+        margin-bottom: 18px;
+        tr {
+          border-bottom: 3px #ffffff solid;
+          &.no-border {
+            border-bottom: none;
+            &:nth-child(odd) {
+              background-color: #dfe5e6;
+            }
+            &:nth-child(even) {
+              background-color: #eceff0;
+            }
+          }
+        }
+        td {
+          padding: 7px 0 6px 8px;
+          &:first-child {
+            color: #505050;
+            font: 400 12px Arial;
+          }
+          &:last-child {
+            color: #000000;
+            font: 400 12px Arial;
+          }
+          a {
+            color: inherit;
+            text-decoration : none;
+          }
+          i {
+            color: #6c6c6c;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
