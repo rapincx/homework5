@@ -1,0 +1,1 @@
+$(document).ready(function(){$("section.menu h3").click(function(){$("ul#left_menu").fadeToggle(1e3)})});

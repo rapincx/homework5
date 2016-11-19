@@ -22,6 +22,10 @@ header {
         height: 10px;
         margin-left: 18px;
       }
+      &:hover {
+        color: $link_active_color;
+        text-decoration: underline;
+      }
     }
   }
   .main-logo {
@@ -51,8 +55,8 @@ header {
     }
   }
   .tabs {
-    @include span(7 of 12 last);
-    @include push(4);
+    @include span(6.4 of 12 last);
+    @include push(5.6);
     ul {
       font-size: 0;
       margin-bottom: -1px;
@@ -63,6 +67,12 @@ header {
         font: 400 16px Arial, sans-serif;
         border: 1px $tabs_border_color solid;
         background: linear-gradient(to bottom, #e5eaeb, #d9d7d5);
+        &:hover {
+          border-color: $active_tabs;
+          a {
+            color: $active_tabs;
+          }
+        }
         &:first-child {
           border-top-left-radius: 30px;
         }
