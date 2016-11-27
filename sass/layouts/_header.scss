@@ -1,9 +1,177 @@
 header {
+  position: relative;
+  .auth {
+    display: none;
+    background-color : #ffffff;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    min-width: 427px;
+    padding: 23px;
+    .top_line {
+      @include span(3);
+      @include push(9);
+      position: relative;
+      a {
+        top: -20px;
+        position: absolute;
+        font: 400 11px/11px Arial;
+        color: #606060;
+        text-decoration: none;
+        &:hover {
+          text-decoration : underline;
+        }
+      }
+    }
+    .input-group {
+      @include span(12);
+      input {
+        min-width: 153px;
+        width: auto;
+        background-color : #d5f1fa;
+        color: #6badd4;
+        font: 400 18px Arial;
+        padding: 11px 0 12px 13px;
+        margin-right: 10px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        &[placeholder] {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &::-moz-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &::-webkit-input-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &:-moz-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &:-ms-input-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+      }
+      button {
+        width: 54px;
+        background: #00a8ff url(../img/reg-sub.png) no-repeat 4px 4px;
+        border: 0;
+        border-radius: 5px;
+        padding-top: 27px;
+        padding-bottom: 17px;
+        outline: 0;
+        &:hover {
+          background-color : #6badd4;
+        }
+      }
+    }
+  }
+  .registration {
+    display: none;
+    background-color : #ffffff;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 26px;
+    max-width: 430px;
+    padding: 22px 24px;
+    .input-group {
+      @include span(7 of 12);
+      input {
+        min-width: 228px;
+        width: auto;
+        background-color : #d5f1fa;
+        color: #6badd4;
+        font: 400 18px Arial;
+        padding: 11px 0 12px 13px;
+        margin-bottom: 7px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        &[placeholder] {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &::-moz-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &::-webkit-input-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &:-moz-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+        &:-ms-input-placeholder {
+          text-overflow:ellipsis;
+          color: #6badd4;
+        }
+      }
+    }
+    .avatar {
+      @include span(5 of 12 last);
+      text-align : right;
+      img.upload_ava {
+        width: 97%;
+      }
+      .upload_file {
+        margin-top: 2px;
+        input {
+          display: none;
+        }
+        span {
+          width: 78%;
+          margin-top: 6px;
+          text-align : center;
+          display: inline-block;
+          font: 400 14px Arial;
+          color: #00a8ff;
+          border: 2px solid #00a8ff;
+          border-radius: 5px;
+          padding: 12px 15px;
+          transition: all .5s;
+          &:hover {
+            background-color : #00a8ff;
+            color: #ffffff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .footer_form {
+      @include span(3 of 12 last);
+      @include push(9);
+      text-align : right;
+      margin-top: 11px;
+      button {
+        width: 54px;
+        height: 33px;
+        background: #00a8ff url(../img/reg-sub.png) no-repeat 4px 4px;
+        border: 0;
+        border-radius: 5px;
+        outline: 0;
+        &:hover {
+          background-color : #6badd4;
+        }
+      }
+    }
+  }
   @include span(12);
   border-bottom: 1px $tabs_border_color solid;
   .auth-panel {
     @include span(2 of 12 last);
     @include push(10);
+    position: relative;
     background-color: $elem_bg_color;
     max-height: 24px;
     padding: 7px 22px;
@@ -11,6 +179,20 @@ header {
     border-bottom-left-radius: 20px;
     display: flex;
     justify-content: space-around;
+    &.active {
+      border-radius: 0;
+      &::before {
+        position: absolute;
+        top: -34px;
+        left: -65px;
+        content: " ";
+        background-color: transparent;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        box-shadow: 30px 15px 0 #ffffff;
+      }
+    }
     a {
       color: $link_color;
       font: 400 11px Arial, sans-serif;

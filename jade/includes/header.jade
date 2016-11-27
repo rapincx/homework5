@@ -1,5 +1,28 @@
 header
-    .auth-panel
+    .auth
+        form
+            .top_line
+                a(href="#") напомнить пароль?
+            .input-group
+                input(type="text" placeholder="логин")
+                input(type="password" placeholder="******")
+                button(type="submit")
+    .registration
+        form
+            .input-group
+                input(type="text" placeholder="имя")
+                input(type="text" placeholder="фамилия")
+                input(type="text" placeholder="email")
+                input(type="text" placeholder="компания")
+                input(type="text" placeholder="должность")
+            .avatar
+                img.upload_ava(src="assets/img/avatar_none.png" alt="avatar")
+                label.upload_file
+                    input(type="file")
+                    span загрузить фото
+            .footer_form
+                button(type="submit")
+    .auth-panel.active
         a(href='#') регистрация
         a.link(href='#') вход
     .main-logo
