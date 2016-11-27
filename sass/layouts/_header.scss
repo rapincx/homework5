@@ -193,11 +193,14 @@ header {
         box-shadow: 30px 15px 0 #ffffff;
       }
     }
-    a {
+    button {
       color: $link_color;
       font: 400 11px Arial, sans-serif;
       text-align: center;
       text-decoration: none;
+      border: 0;
+      outline: 0;
+      background-color : inherit;
       &:first-child::after {
         content : '|';
         width: 1px;

@@ -1,8 +1,10 @@
 include ../mixin/content.jade
-div.main#home
+div.main.active#home
     +article
     +article
     +article
+    .pagination
+        a.prev_page(href="#") предыдущие записи
 div.main#goals
     h2 Цель проекта
     .content
